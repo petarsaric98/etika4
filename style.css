@@ -204,3 +204,43 @@ footer.podnozje a{color:#fff}
 .povratak:hover{color:var(--tirkiz)}
 
 hr.razdjelnik{border:none;height:1px;background:var(--pijesak-tamni);margin:44px 0}
+
+/* ===== vaga odgovornosti (lekcija 2) ===== */
+.vaga{background:var(--bijela);border:1px solid var(--pijesak-tamni);border-radius:var(--radius);
+  padding:22px 24px;box-shadow:var(--sjena);margin:20px 0}
+.vaga-oznake,.vaga-postotak{display:flex;justify-content:space-between;gap:12px}
+.vaga-oznake span{font-family:var(--serif);font-weight:700;color:var(--duboka)}
+.vaga-postotak span{font-size:.88rem;color:var(--siva);font-weight:600}
+.vaga input[type=range]{width:100%;margin:14px 0 8px;accent-color:var(--tirkiz)}
+.vaga .odgovor{background:var(--pijesak);margin-top:12px}
+
+/* ===== eskalacija u dva stupca (lekcija 2) ===== */
+.eskalacija{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin:20px 0}
+.esk-stupac{background:var(--bijela);border:1px solid var(--pijesak-tamni);border-radius:var(--radius);
+  padding:20px 24px;box-shadow:var(--sjena);border-top:5px solid var(--koralj)}
+.esk-stupac:last-child{border-top-color:var(--ljubicasta)}
+.esk-stupac h3{margin:0 0 .5em;font-size:1.1rem}
+.esk-stupac ol{margin:0;padding-left:20px}
+.esk-stupac li{margin-bottom:10px;font-size:.95rem;animation:pojavi .3s ease}
+.esk-stupac li:last-child{margin-bottom:0}
+
+/* ===== spektar: liječenje ili poboljšanje (lekcija 3) ===== */
+.spektar{background:var(--bijela);border:1px solid var(--pijesak-tamni);border-radius:var(--radius);
+  padding:22px 24px;box-shadow:var(--sjena);margin:20px 0}
+.spektar-traka{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.spektar-traka button{font:inherit;font-size:.88rem;cursor:pointer;background:var(--pijesak);
+  border:2px solid var(--pijesak-tamni);border-radius:999px;padding:7px 14px;text-align:left}
+.spektar-traka button:hover{border-color:var(--tirkiz)}
+.spektar-traka button.aktivan{border-color:var(--tirkiz);background:#eef7f5}
+.spektar-skala{display:flex;justify-content:space-between;font-size:.78rem;color:var(--siva);
+  text-transform:uppercase;letter-spacing:.1em;font-weight:700;border-top:1px dashed var(--pijesak-tamni);padding-top:10px}
+
+/* ===== dva Mortyja / usporedne osobe (lekcija 3) ===== */
+.dvojnik{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:20px 0}
+.dvojnik-k{background:var(--bijela);border:1px solid var(--pijesak-tamni);border-radius:var(--radius);
+  padding:22px;box-shadow:var(--sjena);border-left:6px solid var(--tirkiz)}
+.dvojnik-k.poslije{border-left-color:var(--koralj)}
+.dvojnik-k h3{margin:0 0 .4em}
+.dvojnik-k ul{margin:0;padding-left:20px;font-size:.95rem}
+.dvojnik-k .biljeg{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:700;color:var(--siva);display:block;margin-bottom:6px}
