@@ -244,3 +244,44 @@ hr.razdjelnik{border:none;height:1px;background:var(--pijesak-tamni);margin:44px
 .dvojnik-k ul{margin:0;padding-left:20px;font-size:.95rem}
 .dvojnik-k .biljeg{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
   font-weight:700;color:var(--siva);display:block;margin-bottom:6px}
+
+/* ===== krug moralnog statusa (lekcija 4) ===== */
+.krug{background:var(--bijela);border:1px solid var(--pijesak-tamni);border-radius:var(--radius);
+  padding:22px 24px;box-shadow:var(--sjena);margin:20px 0}
+.krug-kriteriji{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.krug-kriteriji button{font:inherit;font-size:.88rem;cursor:pointer;background:var(--pijesak);
+  border:2px solid var(--pijesak-tamni);border-radius:999px;padding:7px 14px}
+.krug-kriteriji button:hover{border-color:var(--tirkiz)}
+.krug-kriteriji button.aktivan{border-color:var(--tirkiz);background:#eef7f5;font-weight:600}
+.krug-bica{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.bice{border:2px dashed var(--pijesak-tamni);border-radius:12px;padding:10px 12px;font-size:.9rem;
+  color:var(--siva);background:var(--pijesak);transition:all .2s ease}
+.bice .ik{display:block;font-size:1.4rem;line-height:1.2}
+.bice.unutra{border-style:solid;border-color:#3f8a4f;background:#e6f3e8;color:var(--tinta)}
+.bice.sporno{border-style:solid;border-color:#c99b2e;background:#fbf3e4;color:var(--tinta)}
+.krug-legenda{display:flex;flex-wrap:wrap;gap:16px;font-size:.8rem;color:var(--siva);margin-top:12px}
+.krug-legenda span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;
+  margin-right:6px;vertical-align:-1px;border:2px solid var(--pijesak-tamni);background:var(--pijesak)}
+.krug-legenda .l-u::before{border-color:#3f8a4f;background:#e6f3e8}
+.krug-legenda .l-s::before{border-color:#c99b2e;background:#fbf3e4}
+.krug .odgovor{background:var(--pijesak);margin-top:14px}
+
+/* ===== ugniježđeni svjetovi (lekcija 4) ===== */
+.gnijezdo{margin:22px 0;border-radius:var(--radius);padding:16px;background:var(--duboka);color:#fff;box-shadow:var(--sjena)}
+.gnijezdo .razina{border:2px solid rgba(255,255,255,.35);border-radius:12px;padding:12px 14px;margin-top:10px}
+.gnijezdo .razina:first-child{margin-top:0}
+.gnijezdo .razina .razina{background:rgba(255,255,255,.06)}
+.gnijezdo strong{font-family:var(--serif);font-size:1.02rem}
+.gnijezdo small{display:block;color:#c7d7d9;font-size:.84rem;margin-top:2px}
+
+/* ===== pravila za auto (lekcija 4) ===== */
+.pravila{list-style:none;padding:0;margin:20px 0;counter-reset:p}
+.pravila li{counter-increment:p;background:var(--bijela);border:1px solid var(--pijesak-tamni);
+  border-radius:12px;padding:12px 16px 12px 52px;margin-bottom:10px;position:relative;box-shadow:var(--sjena)}
+.pravila li::before{content:counter(p);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--koralj);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.85rem}
+.pravila .pravilo{font-weight:700;color:var(--duboka)}
+.pravila .ishod{display:block;color:var(--siva);font-size:.93rem}
+
+/* ===== tri vrste tvrdnji (lekcija 5) ===== */
+.tvrdnja .gumbi.tri button{padding:6px 12px;font-size:.84rem}
